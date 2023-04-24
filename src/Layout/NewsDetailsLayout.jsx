@@ -1,24 +1,21 @@
-import Footer from '../pages/Shared/Footer/Footer';
+import React from 'react';
 import Header from '../pages/Shared/Header/Header';
 import { Col, Container, Row } from 'react-bootstrap';
-import LeftNav from '../pages/Shared/Leftnav/LeftNav';
-import RightNav from '../pages/Shared/RightNav/RightNav';
 import { Outlet } from 'react-router-dom';
+import RightNav from '../pages/Shared/RightNav/RightNav';
+import Footer from '../pages/Shared/Footer/Footer';
 
-const Main = () => {
+const NewsDetailsLayout = () => {
     return (
         <div>
             <Header />
             <Container>
                 <Row>
-                    <Col lg={3}>
-                        <LeftNav/>
-                    </Col>
-                    <Col lg={6}>
-                        <Outlet/>
+                    <Col lg={9}>
+                       <h3>News Details Coming Soon</h3>
                     </Col>
                     <Col lg={3}>
-                        <RightNav/>
+                        <RightNav />
                     </Col>
                 </Row>
             </Container>
@@ -27,4 +24,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default NewsDetailsLayout;
